@@ -5,6 +5,7 @@ from bible_cli.database import Translation
 type SuperScriptNumber = str
 type RawNumber = str | int
 
+
 @dataclass
 class QueryData:
     query_string: str

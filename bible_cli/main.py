@@ -8,7 +8,8 @@ app = typer.Typer()
 @app.command()
 def about():
     print(
-        "✝️ BIBLE_CLI is simple cli app to query bible text from many bible portuguese versions"
+        '✝️ BIBLE_CLI is simple cli app to query bible text '
+        'from many bible portuguese versions'
     )
 
 
@@ -23,13 +24,11 @@ def query(q: str):
         Eclesiastes 3:15-16
         Eclesiastes 3:15 ARA
     """
-    
 
     processor = QueryProcessor()
     output = processor.process_query(q)
     typer.echo(output)
 
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     app()
